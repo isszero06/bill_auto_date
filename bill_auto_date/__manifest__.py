@@ -9,7 +9,8 @@
     "email": "sales@erpzero.com",
     "sequence": 0,
 
-    'summary': """If Sales order Date less than today date and when confirm order the order date not change""",
+    'summary': """Bill Date field will be equal to today's date automatically """,
+
 
     'description': """
         The standard situation of the Odoo system, when confirming the Bill,
