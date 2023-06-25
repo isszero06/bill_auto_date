@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Bill Date today Date',
-    'version': '16.0.1',
+    'version': '6.0.1',
     'category': 'Accounting',
     "author": 'Zero Systems',
     "company": 'Zero for Information Systems',
