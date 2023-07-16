@@ -25,7 +25,7 @@
     'data': [
     ],
     'license': 'OPL-1',
-    # 'live_test_url': 'https://www.youtube.com/watch?v=T82sTeIwrm8',
+    'live_test_url': 'https://youtu.be/fzxzoRlrabA',
     'images': ['static/description/bill_date_today.png'],
     'installable': True,
     'auto_install': False,
