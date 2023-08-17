@@ -18,7 +18,6 @@ from datetime import date, timedelta, datetime
 
 class AccountMove(models.Model):
     _inherit = "account.move"
-    _description = "bills auto date"
 
     def _post(self, soft=False):
         for move in self:
