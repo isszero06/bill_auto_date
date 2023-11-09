@@ -21,12 +21,10 @@ class AccountMove(models.Model):
 
     def _post(self, soft=False):
         for move in self:
-
-            if not move.invoice_date:
-                if move.is_sale_document(include_receipts=True):
+                if move.is_sale_document(include_receipts=True) and not move.invoice_date:
                     move.invoice_date = fields.Date.context_today(self)
                     move.with_context(check_move_validity=False)._onchange_invoice_date()
-                elif move.is_purchase_document(include_receipts=True):
+                elif move.is_purchase_document(include_receipts=True) and not move.invoice_date:
                     move.invoice_date = fields.Date.context_today(self)
                 move.invoice_date = fields.Date.context_today(move)
         res = super(AccountMove, self)._post(soft=False)
