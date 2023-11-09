@@ -21,10 +21,8 @@ class AccountMove(models.Model):
 
     def _post(self, soft=False):
         for move in self:
-            if not move.invoice_date:
-                if move.is_purchase_document(include_receipts=True):
-                    move.invoice_date = fields.Date.context_today(self)
-                move.invoice_date = fields.Date.context_today(move)
+            if move.is_purchase_document(include_receipts=True) and not move.invoice_date:
+                move.invoice_date = fields.Date.context_today(self)
         res = super(AccountMove, self)._post(soft=False)
         return res
 
