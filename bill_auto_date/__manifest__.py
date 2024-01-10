@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Bill Date today Date',
-    'version': '6.0.2',
+    'version': '7.0.1',
     'category': 'Accounting',
     "author": 'Zero Systems',
     "company": 'Zero for Information Systems',
@@ -32,5 +32,4 @@
     'application': False,
     'price': 0.00,
     'currency': 'EUR',
-    "pre_init_hook": "pre_init_check",
 }
